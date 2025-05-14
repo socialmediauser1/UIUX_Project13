@@ -1,0 +1,95 @@
+{
+  "infoSections": [
+    {
+      "title": "Hero Section",
+      "content": "Tailored for You, Crafted with Excellence",
+      "buttonText": "Schedule a Consultation",
+      "buttonLink": "contactus.html"
+    },
+    {
+      "title": "Our Collections",
+      "collections": [
+        {
+          "title": "Elegant Linen Collection",
+          "imageUrl": "collection1.png",
+          "alt": "Elegant Linen Collection for modern wear",
+          "link": "catalog.html"
+        },
+        {
+          "title": "Timeless Classics",
+          "imageUrl": "collection2.png",
+          "alt": "Timeless Classics - Vintage Inspired Looks",
+          "link": "catalog.html"
+        },
+        {
+          "title": "Handwoven Heritage",
+          "imageUrl": "collection3.png",
+          "alt": "Handwoven Heritage - Artisan Craftsmanship",
+          "link": "catalog.html"
+        }
+      ]
+    },
+    {
+      "title": "About Us",
+      "content": [
+        {
+          "subtitle": "Craftsmanship with a Personal Touch",
+          "text": "At Atelier Luxe, we believe tailoring is an art. Every garment is crafted with precision, care, and an eye for detail."
+        },
+        {
+          "subtitle": "Designed for You, Made to Fit",
+          "text": "Bespoke designs tailored to your body, style, and personality—because no two individuals are alike."
+        },
+        {
+          "subtitle": "From Sketch to Stitch",
+          "text": "Our process ensures that every piece is tailored to perfection, from the first sketch to the final stitch."
+        }
+      ],
+      "imageUrl": "aboutus.png",
+      "buttonText": "Learn More About Our Tailoring",
+      "buttonLink": "infopage.html"
+    },
+    {
+      "title": "How It Works",
+      "steps": [
+        {
+          "text": "Customization Process",
+          "imageUrl": "process1.png",
+          "alt": "Step-by-step customization process illustration",
+          "link": "infopage.html"
+        },
+        {
+          "text": "Tailoring Made Simple",
+          "imageUrl": "process2.png",
+          "alt": "Easy tailoring interface demo",
+          "link": "infopage.html"
+        }
+      ]
+    },
+    {
+      "title": "Our Customers",
+      "testimonials": [
+        {
+          "text": "Incredible craftsmanship! My custom suit fits like a dream.",
+          "name": "Alex R.",
+          "avatar": "avatar1.png"
+        },
+        {
+          "text": "The attention to detail is unmatched!",
+          "name": "Sofia M.",
+          "avatar": "avatar2.png"
+        },
+        {
+          "text": "Finally, clothing that truly feels like it was made for me.",
+          "name": "Daniel P.",
+          "avatar": "avatar3.png"
+        }
+      ]
+    },
+    {
+      "title": "Contact Us",
+      "buttonText": "Schedule a Consultation",
+      "buttonLink": "contactus.html"
+    }
+  ]
+}

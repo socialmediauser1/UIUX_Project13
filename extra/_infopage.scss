@@ -1,0 +1,195 @@
+.info-page {
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 20px;
+    font-family: 'Lato', sans-serif;
+    color: $color4;
+    background-color: $color1;
+  
+    .info-section {
+      margin-bottom: 30px;
+  
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+        color: $color4;
+      }
+  
+      p, li {
+        font-size: 0.95rem;
+        color: $color5;
+        line-height: 1.5;
+      }
+  
+      ul, ol {
+        margin: 0;
+        padding-left: 1.2rem;
+        list-style-position: outside;
+  
+        li {
+          padding-left: 0.4rem;
+          text-indent: -0.4rem;
+          margin-bottom: 6px;
+          line-height: 1.5;
+        }
+      }
+  
+      .faq p {
+        margin-bottom: 15px;
+      }
+    }
+  
+    .contact-block {
+        padding: 20px;
+        border-radius: 8px;
+        background: $color1;
+      
+        h2 {
+          margin-bottom: 8px;
+        }
+      
+        p {
+          margin-bottom: 15px;
+          color: $color5;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+          
+            .contact-text {
+              width: 100%;
+            }
+          
+            ul {
+              margin: 0;
+              padding: 0;
+              line-height: 1.6;
+              font-size: 0.9rem;
+              list-style-type: disc;
+              list-style-position: inside;
+            }
+          
+            .primary-btn {
+              width: 100%;
+              text-align: center;
+              margin-top: 10px;
+              text-decoration: none;
+            }
+          }                               
+      }      
+    }
+
+@media (min-width: 768px) {
+  .info-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 30px;
+
+    .info-section {
+      margin-bottom: 35px;
+
+      h2 {
+        font-size: 1.6rem;
+        margin-bottom: 14px;
+      }
+
+      p, li {
+        font-size: 0.98rem;
+        line-height: 1.55;
+      }
+
+      ul, ol {
+        padding-left: 1.4rem;
+
+        li {
+          padding-left: 0.45rem;
+          text-indent: -0.45rem;
+          margin-bottom: 7px;
+        }
+      }
+
+      .faq p {
+        margin-bottom: 18px;
+      }
+    }
+
+    .contact-block {
+      padding: 25px;
+      border-radius: 9px;
+
+      .contact-details {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .contact-text {
+          flex: 1 1 60%;
+        }
+
+        .primary-btn {
+          width: auto;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .info-page {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 40px;
+
+    .info-section {
+      margin-bottom: 40px;
+
+      h2 {
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+      }
+
+      p, li {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      ul, ol {
+        padding-left: 1.5rem;
+
+        li {
+          padding-left: 0.5rem;
+          text-indent: -0.5rem;
+          margin-bottom: 8px;
+        }
+      }
+
+      .faq p {
+        margin-bottom: 20px;
+      }
+    }
+
+    .contact-block {
+      padding: 30px;
+      border-radius: 10px;
+
+      .contact-details {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+
+        .contact-text {
+          flex: 1 1 60%;
+        }
+
+        .primary-btn {
+          transform: translateY(4px);
+          height: fit-content;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
