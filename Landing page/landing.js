@@ -1,17 +1,4 @@
 const main = document.querySelector('main');
-
-function createErrorBlock(message) {
-    const sec = document.createElement('section');
-    sec.classList.add('error-section');
-
-    const p = document.createElement('p');
-    p.classList.add('error-message');
-    p.textContent = message;
-
-    sec.appendChild(p);
-    main.appendChild(sec);
-}
-
 Promise.all([
     fetch('sections.json').then(res => {
         if (!res.ok) throw new Error('Sections data could not be loaded.');
@@ -27,8 +14,7 @@ Promise.all([
                 sec.classList.add('hero', 'container', 'hero-content');
                 sec.innerHTML = `
           <h1>${section.content}</h1>
-          <a href="${section.buttonLink}" class="primary-btn">${section.buttonText}</a>
-        `;
+          <a href="${section.buttonLink}" class="primary-btn">${section.buttonText}</a>`;
                 main.prepend(sec);
                 return;
             }
@@ -193,5 +179,11 @@ Promise.all([
     })
     .catch(err => {
         console.error(err);
-        createErrorBlock('⚠️ We are sorry, something went wrong while loading the page content.');
+        const errorSec = document.createElement('section');
+        errorSec.classList.add('error-section');
+        const errorP = document.createElement('p');
+        errorP.classList.add('error-message');
+        errorP.textContent = '⚠️ We are sorry, something went wrong while loading the page content.';
+        errorSec.appendChild(errorP);
+        main.appendChild(errorSec);
     });

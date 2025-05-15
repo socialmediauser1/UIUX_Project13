@@ -37,25 +37,21 @@ function renderCatalogCards(cards) {
   });
 }
 
-function showCatalogError(message) {
-  const container = document.querySelector('.blog-container');
-  container.innerHTML = '';
-
-  const errorDiv = document.createElement('div');
-  errorDiv.classList.add('error-message');
-  errorDiv.textContent = message;
-
-  container.appendChild(errorDiv);
-}
-
-Promise.all([
-  fetch('products.json').then(res => {
-    if (!res.ok) throw new Error('Could not load products.json');
-    return res.json();
+fetch('products.json')
+  .then(response => {
+    if (!response.ok) throw new Error("Could not load products");
+    return response.json();
   })
-])
-  .then(([products]) => renderCatalogCards(products))
+  .then(products => renderCatalogCards(products))
   .catch(err => {
     console.error('Catalog loading error:', err);
-    showCatalogError('⚠️ Sorry, products could not be loaded at the moment. Please try again later.');
+
+    const container = document.querySelector('.blog-container');
+    container.innerHTML = '';
+
+    const errorDiv = document.createElement('div');
+    errorDiv.classList.add('error-message');
+    errorDiv.textContent = 'Sorry, products could not be loaded at the moment. Please try again later.';
+
+    container.appendChild(errorDiv);
   });
